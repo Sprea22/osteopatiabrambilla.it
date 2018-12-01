@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Osteopatia Brambilla</title>
+	<!-- Website Icon -->
+	<link rel="shortcut icon" href="img/b_logo.png" type="favicon/ico" />
+	<!-- Bootsrap Scripts -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-md navbar-light bg-light navbar-static-top">
+	<div class="container-fluid">
+																	<!-- Add here your logo -->
+		<a class="navbar-brand" href="#slides">
+			<img class="nav-logo" src="img/logo.png">
+		<a/>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse collapse in" id="navbarResponsive">
+				<ul class="navbar-nav ml-auto">
+					<!-- Add here your list of buttons for the navigation bar -->
+					<li class="nav-item">
+						<a class="nav-link" href="index.html">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" href="services.html">Progetto</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="blog.html">Blog</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="contact.html">Contatti</a>
+					</li>
+				</ul>
+			</div>
+	</div>
+</nav>
+
+
+
+
+<div class="bodyIntro">
+	<h1 class="display-4 intro"> Progetto </h1>
+</div>
+<!--- Sezione "Il progetto" -->
+<section>
+  <div class="container py-3">
+    <div class="card" style="border:none;">
+      <div class="row ">
+
+          <div class="col-md-8 px-3">
+            <div class="card-block px-3">
+							<br>
+              <p class="card-text">
+								Osteopatia Brambilla nasce dall’esigenza di mettere a disposizione di tutti le conoscenze e gli insegnamenti appresi
+			 					durante gli anni di formazione in osteopatia al fine di valutare e trattare in modo efficace i disturbi riferiti dai pazienti.
+							</p>
+							<p class="card-text">
+							La peculiarità della visita osteopatica risiede nell’inquadramento e nella gestione della sintomatologia, attraverso una visione
+							globale e olistica del funzionamento del corpo. Ciò permette di avere una maggior efficacia nella valutazione e nel trattamento del disturbo esaminato.
+							L’obiettivo è di dedicare professionalità, passione e accuratezza al servizio dei pazienti, dal bambino all’anziano.
+							</p>
+						 </div>
+          </div>
+					<div class="col-md-4">
+							<img src="https://placeholdit.imgix.net/~text?txtsize=38&txt=400%C3%97400&w=400&h=400" class="w-100">
+					</div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<br><hr class="thick">
+
+<!--- Two Column Section --> <!--- Useful for text and image by side-->
+<section id = "studio">
+	<br>
+		<div class="row text-center">
+			<div class="col-md-4 col-12">
+				<img src="img/slides1.jpg"  width="80%">
+	    </div>
+			<div class="col-md-4 col-12">
+				<img src="img/slides1.jpg" width="90%">
+			</div>
+			<div class="col-md-4 col-12">
+				<img src="img/slides1.jpg" width="80%">
+			</div>
+		</div>
+</section>
+
+<br><hr class="thick">
+
+<!--- Footer -->
+<section id="contact">
+<footer>
+	<div class="container-fluid padding">
+		<div class="row">
+			<div class="col-12 text-center">
+			</div>
+			<div class="offset-md-4 col-md-4 text-center">
+				<br>
+				<p><b> Osteopatia Brambilla </b></p>
+				<p>	 Via Garibaldi 23, 20061 Carugate (MI)</p>
+				<p>	P.iva 10529990961</p>
+				<p> osteopatiabrambilla@gmail.com</p>
+
+				<i class="fab fa-facebook circle"></i>
+				<i class="fab fa-twitter circle"></i>
+				<i class="fab fa-instagram circle"></i>
+			</div>
+		</div>
+		</div>
+			<div class="col-12 text-center">
+				<hr class="light-100">
+				<h5>&copy; web4friends </h5>
+			</div>
+		</div>
+</footer>
+</section>
+
+<script>
+$(function(){
+		var navMain = $(".navbar-collapse"); // avoid dependency on #id
+		// "a:not([data-toggle])" - to avoid issues caused
+		// when you have dropdown inside navbar
+		navMain.on("click", "a:not([data-toggle])", null, function () {
+				$("#navbarResponsive").collapse('hide')
+		});
+});
+</script>
+</body>
+</html>
