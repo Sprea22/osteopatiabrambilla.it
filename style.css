@@ -95,28 +95,14 @@ section {
   margin-bottom: .1rem;
 }
 
-.circle{
-	border-radius: 50%;
-	margin: 0.15em;
-	font-size: 3em;
-	}
-
-.fa-twitter{
-	background: white;
-	color: black;
-  padding: 0.05em 0.2em;
-	}
-
-.fa-facebook{
-	background: white;
-	color: black;
-  padding: 0.05em 0.2em;
-	}
-
-.fa-instagram{
-  background: white;
-	color: black;
-  padding: 0.05em 0.2em;
+.icon-footer {
+    background-color: white;
+    color: black;
+    padding: 40px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
 }
 
 .fa-facebook:hover,
@@ -264,6 +250,12 @@ hr.thick {
   }
 }
 @media (max-width: 576px) {
+  .card-block{
+    margin-top: -40px;
+  }
+  .card-text{
+    text-align: center;
+  }
   .nav-logo {
     width: 200px;
   }
