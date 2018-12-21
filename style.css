@@ -41,18 +41,8 @@ section {
 }
 
 .carousel-caption {
-  position:   absoute;   /* relative | absolute */
-  bottom :        10%;      /* top | bottom (0px is top of element) */
-  left:          -45%;       /* left | right (0% is left of element) */
-  padding: 5px;
-
-}
-
-.carousel-caption-two {
-  position:   absolute;   /* relative | absolute */
-  top: 35%;    /* top | bottom (0px is top of element) */
-  right:           35%;       /* left | right (0% is left of element) */
   padding:5px;
+  font-size: 80%;
 }
 
 .carousel-caption h1 {
@@ -176,14 +166,6 @@ hr.thick {
   .nav-logo {
     width: 300px;
   }
-  .carousel {
-    width: 100%;
-    height: 800px;
-  }
-  .carousel-inner {
-    width: 100%;
-    height: 800px;
-  }
 
   .carousel-caption h1 {
     font-size: 450%
@@ -207,19 +189,44 @@ hr.thick {
   .immProgetto{
     width:250px;
   }
-  .carousel-caption {
-    font-size: 200%;
+
+  .carousel-control-prev{
+    position: absolute;
+    bottom: -10%;
   }
-  .carousel-caption-two {
-    font-size: 200%;
+
+  .carousel-control-next{
+    position: absolute;
+    bottom: -10%;
   }
+
+  .carousel-pos-button-one {
+    position:   absolute;   /* relative | absolute */
+    bottom :        15%;      /* top | bottom (0px is top of element) */
+    left:          -45%;       /* left | right (0% is left of element) */
+  }
+  .carousel-pos-button-two {
+    position:   absolute;   /* relative | absolute */
+    top: 30%;    /* top | bottom (0px is top of element) */
+    right:           -10%;       /* left | right (0% is left of element) */
+  }
+
 }
 
 @media (max-width: 1200px) {
   .nav-logo {
     width: 300px;
   }
-
+  .carousel-pos-button-one {
+    position:   absolute;   /* relative | absolute */
+    bottom :        15%;      /* top | bottom (0px is top of element) */
+    left:          -45%;       /* left | right (0% is left of element) */
+  }
+  .carousel-pos-button-two {
+    position:   absolute;   /* relative | absolute */
+    top: 30%;    /* top | bottom (0px is top of element) */
+    right:           -10%;       /* left | right (0% is left of element) */
+  }
 }
 
 @media (max-width: 992px) {
@@ -232,6 +239,16 @@ hr.thick {
   .social a{
     font-size: 4em;
     padding: 2rem;
+  }
+  .carousel-pos-button-one {
+    position:   absolute;   /* relative | absolute */
+    bottom :        15%;      /* top | bottom (0px is top of element) */
+    left:          -45%;       /* left | right (0% is left of element) */
+  }
+  .carousel-pos-button-two {
+    position:   absolute;   /* relative | absolute */
+    top: 30%;    /* top | bottom (0px is top of element) */
+    right:           -10%;       /* left | right (0% is left of element) */
   }
   }
 @media (max-width: 768px) {
@@ -262,18 +279,19 @@ hr.thick {
     padding: 1.2rem;
   }
 
-  .carousel-caption {
+  .carousel-pos-button-one {
     position:   absolute;   /* relative | absolute */
     bottom :        5%;      /* top | bottom (0px is top of element) */
     left:          -45%;       /* left | right (0% is left of element) */
-    padding:5px;
   }
-
-  .carousel-caption-two {
+  .carousel-pos-button-two {
     position:   absolute;   /* relative | absolute */
-    top: 27%;    /* top | bottom (0px is top of element) */
-    right:           15%;       /* left | right (0% is left of element) */
+    top: 30%;    /* top | bottom (0px is top of element) */
+    right:           -10%;       /* left | right (0% is left of element) */
+  }
+  .carousel-caption {
     padding:5px;
+    font-size: 50%;
   }
 
 }
@@ -306,6 +324,21 @@ hr.thick {
   .social a{
     font-size: 2em;
     padding: .7rem;
+  }
+
+  .carousel-pos-button-one {
+    position:   absolute;   /* relative | absolute */
+    bottom :        7%;      /* top | bottom (0px is top of element) */
+    left:          -45%;       /* left | right (0% is left of element) */
+  }
+  .carousel-pos-button-two {
+    position:   absolute;   /* relative | absolute */
+    top: 27%;    /* top | bottom (0px is top of element) */
+    right:           -5%;       /* left | right (0% is left of element) */
+  }
+  .carousel-caption {
+    padding:5px;
+    font-size: 50%;
   }
 }
 
