@@ -21,9 +21,9 @@
 <nav class="navbar navbar-expand-md navbar-light bg-light navbar-static-top">
 	<div class="container-fluid">
 																	<!-- Add here your logo -->
-		<a class="navbar-brand" href="#slides">
-			<img class="nav-logo" src="img/logo.png">
-		<a/>
+			<a class="navbar-brand" href="Home.html">
+				<img class="nav-logo" src="img/logo.png">
+			</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
 				<span class="navbar-toggler-icon"></span>
 			</button>
@@ -31,16 +31,16 @@
 				<ul class="navbar-nav ml-auto">
 					<!-- Add here your list of buttons for the navigation bar -->
 					<li class="nav-item">
-						<a class="nav-link" href="index.html">Home</a>
+						<a class="nav-link" href="Home.html">Home</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="services.html">Progetto</a>
+						<a class="nav-link" href="Progetto.html">Progetto</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="blog.html">Blog</a>
+						<a class="nav-link" href="Blog.html">Blog</a>
 					</li>
 					<li class="nav-item active">
-						<a class="nav-link active" href="contact.html">Contatti</a>
+						<a class="nav-link active" href="Contatti.html">Contatti</a>
 					</li>
 				</ul>
 			</div>
@@ -57,45 +57,65 @@
 
 				<div class="col-md-5 px-3">
 					<h2 class="display-4" style="text-align:center;">	Dubbi o domande? Contattaci ora!</h2>
-					<form>
+					<!-- Contatti form -->
+
+					<form action="https://formspree.io/osteopatiabrambilla@gmail.com" method="POST">
 						<hr class="light-100">
 						<div class="form-group">
 							<label for="nome"> Nome </label>
-							<input type="text" class="form-control" id="nome" placeholder="Il tuo nome..">
+						<input type="text" name="Nome" class="form-control" id="nome" placeholder="Il tuo nome..">
 						</div>
 
 						<div class="form-group">
 							<label for="cognome"> Cognome </label>
-							<input type="text" class="form-control" id="cognome" placeholder="Il tuo cognome..">
+							<input type="text" name="Cognome" class="form-control" id="cognome" placeholder="Il tuo cognome..">
 						</div>
 
 						<div class="form-group">
 							<label for="telefono"> Telefono </label>
-							<input type="text" class="form-control" id="telefono" placeholder="Il tuo telefono..">
+							<input type="text" name="Telefono" class="form-control" id="telefono" placeholder="Il tuo telefono..">
 						</div>
 
 						<div class="form-group">
 							<label for="email"> Email </label>
-							<input type="email" class="form-control" id="email" placeholder="La tua email..">
+							<input type="text" name="Email" class="form-control" id="email" placeholder="La tua email..">
 						</div>
+
 
 						<div class="form-group">
+
 							<label for="exampleFormControlTextarea1">Contenuto </label>
-							<textarea class="form-control" id="contenuto" rows="4" placeholder="Il contenuto del messaggio.."></textarea>
+							<textarea type="text" name="Contenuto" class="form-control" id="contenuto" rows="4" placeholder="Il contenuto del messaggio.."></textarea>
 						</div>
 
-						<button id="sendMessage" class="btn btn-primary">Inviare </button>
+						<button type="submit" value="Send" class="btn btn-primary">Inviare </button>
 					</form>
 			 </div>
 
 			<div class="offset-md-2 col-md-5 px-3">
-					<h2 class="display-4" style="text-align:center;">	I nostri contatti</h2>
-					<hr class="light-100">
-					<p>	<i class="fa fa-phone body-icons"></i>  349-1992353 </p>
-					<p> <i class="fa fa-envelope body-icons"></i>  osteopatiabrambilla@gmail.com</p>
-					<p> <i class="fa fa-clock  body-icons"></i> Lunedi - Venerdì: 9.00 - 18.00 </p>
-					<p>	 <i class="fa fa-home body-icons"></i>  Via Garibaldi 23, 20061 Carugate (MI)</p>
-					<br>
+				<p> <b> Luca Brambilla D.O. </b> <br> Membro Roi n° 4366 </p>
+				<p>	<i class="fa fa-phone body-icons"> </i> 349-1992353 </p>
+				<p> <i class="fa fa-envelope body-icons"></i>  osteopatiabrambilla@gmail.com</p>
+				<p>	 <i class="fa fa-home body-icons"></i>  Via Garibaldi 23, 20061 Carugate (MI)</p>
+				<!-- <i class="fa fa-clock  body-icons"> </i> -->
+				<hr>
+			 <div class="row">
+						<div class="col-md-6">
+								<div class="card-block">
+							<b> Lunedi - Venerdì: </b> <br>
+							 Mattino 09:00 - 12:00 <br>
+							Pomeriggio 14:00 - 19:00 <br>
+								</div>
+						</div>
+
+						<div class="col-md-6">
+								<div class="card-block">
+								 <b> Sabato: </b> <br>
+								 Mattino 09:00 - 12:00
+								</div>
+						</div>
+			</div>
+			<hr>
 					<div id="googleMap" style="width:100%;height:400px;">	</div>
 		 </div>
 
@@ -108,8 +128,9 @@
 
 <br><hr class="thick">
 
+
 <!--- Footer -->
-<section id="contact">
+<section id="Contatti">
 <footer>
 	<div class="container-fluid padding">
 		<div class="row">
@@ -122,21 +143,27 @@
 				<p>	P.iva 10529990961</p>
 				<p> osteopatiabrambilla@gmail.com</p>
 
-				<a href="#" class="circle fab fa-facebook icon-footer" style="width: 40px; height: 40px; padding:10px;"></a>
-				<a href="#" class="circle fab fa-twitter icon-footer" style="width: 40px; height: 40px;padding:10px;"></a>
-				<a href="https://www.instagram.com/osteopatiabrambilla/" class="circle fab fa-instagram icon-footer" style="width: 40px; height: 40px;padding:10px;"> </a>
-
+				<!-- Social Media links -->
+				<a href="https://www.facebook.com/osteopatiabrambilla/" >
+					<img src=""class="circle fab fa-facebook icon-footer" style="width: 40px; height: 40px;padding:10px;">
+				</a>
+				<a href="#" class="circle fab fa-twitter icon-footer" style="width: 40px; height: 40px;padding:10px;"> </a>
+				<a href="https://www.instagram.com/osteopatiabrambilla/" >
+					<img src=""class="circle fab fa-instagram icon-footer" style="width: 40px; height: 40px;padding:10px;">
+				</a>
 			</div>
+
 		</div>
 		</div>
+
 			<div class="col-12 text-center" style="padding-bottom:10px;">
 				<hr class="light-100">
 				<h5>&copy; web4friends </h5>
 			</div>
+
 		</div>
 </footer>
 </section>
-
 
 <script>
 function myMap() {
@@ -163,9 +190,10 @@ $(function(){
 });
 </script>
 
+<!--
 <script>
 	$("#sendMessage").on("click", function() {
-	  // message = $("#contactform").serialize();
+	  // message = $("#Contattiform").serialize();
 		//get the name field value
 		var nome = $('#nome').val();
 		//get the surname field value
@@ -178,7 +206,7 @@ $(function(){
 		var contenuto = $('#contenuto').val();
 	    $.ajax({
 	        url: "//formspree.io/spreafico95@hotmail.it",
-	        method: "POST",
+	        method: 'POST',
 	        data: {nome: nome,
 								cognome: cognome,
 								email: email,
@@ -190,6 +218,7 @@ $(function(){
 	    return false;
 	});
 </script>
+-->
 
 </body>
 </html>
