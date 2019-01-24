@@ -37,7 +37,7 @@
 						<a class="nav-link active" href="Progetto.html">Progetto</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="Blog.html">Blog</a>
+						<a class="nav-link" href="Blog/Articoli.html">Blog</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="Contatti.html">Contatti</a>
@@ -84,22 +84,45 @@
     </div>
 </section>
 
-<br><hr class="thick">
+<br>
 
 <!--- Two Column Section --> <!--- Useful for text and image by side-->
+<div class="bodyIntro">
+	<h1 class="display-4 intro"> Lo studio </h1>
+</div>
+
+<br>
+
 <section id = "studio">
-	<br>
-		<div class="row text-center">
-			<div class="col-md-4 col-12">
-				<img src="img/osteopatia.jpg"  width="90%">
-	    </div>
-			<div class="col-md-4 col-12">
-				<img src="img/slides1.jpg" width="95%">
+
+	<div id="slides" class="carousel slide carousel-slider" interval="false">
+		<ul class="carousel-indicators">
+			<li data-target="#slides" data-slide-to = "0" class= "active"></li>
+			<li data-target="#slides" data-slide-to = "1"></li>
+			<li data-target="#slides" data-slide-to = "2"></li>
+		</ul>
+
+		<!--- Add here the images for the main image slider -->
+		<div class="carousel-inner" role="listbox" style="height: 75%;">
+			<div class="carousel-item active">
+				<img src="img/studio1.jpg" style="max-height: 600px;"> <!------------>
 			</div>
-			<div class="col-md-4 col-12">
-				<img src="img/visita.jpg" width="90%">
+			<div class="carousel-item">
+				<img src="img/studio2.jpg" style="max-height: 600px;"> <!------------>
+			</div>
+			<div class="carousel-item">
+				<img src="img/studio3.jpg" style="max-height: 600px;"> <!------------>
 			</div>
 		</div>
+
+		<a class="carousel-control-prev ctrl-button" href="#slides" role="button" data-slide="prev">
+		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		</a>
+		<a class="carousel-control-next ctrl-button" href="#slides" role="button" data-slide="next">
+		<span class="carousel-control-next-icon" aria-hidden="true"></span>
+		</a>
+	</div>
+
 </section>
 
 <br><hr class="thick">
@@ -142,6 +165,7 @@
 </section>
 
 <script>
+
 $(function(){
 		var navMain = $(".navbar-collapse"); // avoid dependency on #id
 		// "a:not([data-toggle])" - to avoid issues caused
